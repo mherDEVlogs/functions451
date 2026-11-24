@@ -25,14 +25,14 @@ void fibo_num(int n){
        printf("1");
        return;
      }
-     long t1 = 0;
-     long t2 = 1;
+     long v1 = 0;
+     long v2 = 1;
      long next_num;
      
      for(int i = 2; i<=n; i++){
-        next_num = t1 + t2;
-        t1 = t2;
-        t2 = next_num;
+        next_num = v1 + v2;
+        v1 = v2;
+        v2 = next_num;
      }
      
      printf("%ld", next_num);
